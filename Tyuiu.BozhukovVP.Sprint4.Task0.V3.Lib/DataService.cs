@@ -5,6 +5,14 @@ public class DataService : ISprint4Task0V3
 {
     public int GetMultOddArrEl(int[] array)
     {
-        throw new NotImplementedException();
+        int с = 1;
+        foreach (int i in array)
+        {
+            if (i % 2 != 0)
+            {
+                с = с * i;
+            }
+        }
+        return с;
     }
 }
